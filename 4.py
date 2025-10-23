@@ -5,7 +5,7 @@ import numpy as np
 from collections import Counter
 
 data = {
-    "Pokwmon_ID": [1, 2, 3, 4, 5, 6],
+    "Pokemon_ID": [1, 2, 3, 4, 5, 6],
     #age
     "Level": [29, np.nan, 52, 40, np.nan, 36], 
     #Salary       
@@ -50,4 +50,5 @@ print(df_ffill[["Pokemon_types", "Pokemon_types"]])
 df_bfill = df.copy()
 df_bfill["Pokemon_types_bfill"] = df_bfill["Pokemon_types"].bfill()
 print("Pokemon_types after backward fill:")
+
 print(df_bfill[["Pokemon_types", "Pokemon_types_bfill"]])
